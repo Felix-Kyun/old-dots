@@ -1,0 +1,3 @@
+#!/bin/bash
+pkill polybar
+/home/felix/.config/polybar/launch.sh --forest

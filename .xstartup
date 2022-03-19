@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#                   ______     ___           __ __
+#                  / ____/__  / (_)  __     / //_/_  ____  ______
+#                 / /_  / _ \/ / / |/_/    / ,< / / / / / / / __ \
+#                / __/ /  __/ / />  <     / /| / /_/ / /_/ / / / /
+#               /_/    \___/_/_/_/|_|____/_/ |_\__, /\__,_/_/ /_/
+#                                  /_____/    /____/
+#                       Xstartup file for Stand Alone WM
+
+# -- wallpaper restore
+nitrogen --restore &
+
+# -- compositor
+xcompmgr &
+
+# -- devilspie 
+devilspie -a &
+
+# -- alacritty with tty-clock
+#alafix -e "clock"
+
+# -- polybar
+/home/felix/.local/bin/poly &
