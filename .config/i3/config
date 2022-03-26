@@ -16,6 +16,8 @@ set $power /home/felix/.config/polybar/forest/scripts/powermenu.sh
 set $lock /home/felix/.local/bin/lock
 set $xstart /home/felix/.xstartup
 set $dmenu /home/felix/.local/bin/dmenu_cus
+set $obsidian obsidian
+set $discord discord 
 
 # Conf
 font pango:FiraCode Nerd Font 8
@@ -24,6 +26,10 @@ floating_modifier $mod
 bindsym $mod+q kill
 bindsym $mod+Return exec alafix
 bindsym $mod+z exec $dmenu
+bindsym $mod+BackSpace exec $power
+bindsym $mod+l exec $lock
+bindsym $mod+e reload
+bindsym $mod+Shift+e restart
 
 bindsym $mod+a focus left
 bindsym $mod+s focus down
@@ -88,6 +94,8 @@ mode "app" {
         bindsym BackSpace exec $power
         bindsym Return exec $launcher
         bindsym l exec $lock 
+        bindsym o exec $obsidian
+        bindsym d exec $discord
 
         bindsym Escape mode "default"
 
