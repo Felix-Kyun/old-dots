@@ -11,8 +11,6 @@
 # -- wallpaper restore
 nitrogen --restore &
 
-# -- compositor
-xcompmgr &
 
 # -- devilspie 
 devilspie -a &
@@ -22,3 +20,6 @@ devilspie -a &
 
 # -- polybar
 /home/felix/.local/bin/poly &
+
+sleep 10
+~/.local/bin/compositor
